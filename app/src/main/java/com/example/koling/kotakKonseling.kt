@@ -35,14 +35,17 @@ class kotakKonseling : AppCompatActivity() {
         binding.btnKirim.setOnClickListener{
             val pesan = binding.etKeluhan.text.toString()
             val timestamp = tanggal()
+            val email = getemailFromPrefs() ?: "Unknown"
+            val username = getUsernameFromPrefs() ?: "Unknown" // Mengambil nama pengguna atau default "Unknown" jika kosong
 
             data class ChatMessage(
+                val email: String = "UserPrefs",
+                val username: String = "UserPrefs", // Tambahkan field username
                 val pesan: String = "",
-//                val: String = "",
                 val timestamp: String = ""
             )
 
-            val message = ChatMessage(pesan , timestamp)
+            val message = ChatMessage(email, username, pesan, timestamp)
 
             if (pesan.isNotEmpty()) {
                 myRef.push().setValue(message)
@@ -51,6 +54,17 @@ class kotakKonseling : AppCompatActivity() {
             }
         }
     }
+
+    private fun getUsernameFromPrefs(): String? {
+        val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+        return sharedPreferences.getString("username", null)
+    }
+
+    private fun getemailFromPrefs(): String? {
+        val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+        return sharedPreferences.getString("email", null)
+    }
+
 
     private fun tanggal(): String {
         val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault())

@@ -12,20 +12,32 @@ import com.example.koling.databinding.ActivityKotakKonselingBinding
 class KotakKonselingAdmin : AppCompatActivity() {
 
     private lateinit var binding: ActivityKotakKonselingAdminBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityKotakKonselingAdminBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        binding = ActivityKotakKonselingAdminBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
+
+        /// Ambil data dari Intent
+        val username = intent.getStringExtra("username")
+        val pesan = intent.getStringExtra("pesan")
+        val timestamp = intent.getStringExtra("timestamp")
+
+        // Tampilkan data ke UI
+        binding.tvUsername.text = username
+        binding.tvWaktu.text = timestamp
+        binding.etKeluhan.setText(pesan) // Menampilkan pesan ke EditText
 
         binding.btnBack.setOnClickListener{
             onBackPressed()
         }
+
         binding.btnTerima.setOnClickListener{
             onBackPressed()
         }
-
     }
+
     override fun onBackPressed() {
         super.onBackPressed()
         finish()

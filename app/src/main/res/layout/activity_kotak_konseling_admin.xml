@@ -31,18 +31,44 @@
         app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toTopOf="@id/btnBack" />
 
+    <!-- Username dan waktu ditempatkan di atas tvKata -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKonseling" />
+
+    <TextView
+        android:id="@+id/tvWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="Waktu pesan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvUsername" />
+
     <TextView
         android:id="@+id/tvKata"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:text="@string/isikeluhan"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/btnBack"
-        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+        app:layout_constraintTop_toBottomOf="@id/tvWaktu" />
 
     <EditText
         android:id="@+id/etKeluhan"
@@ -58,6 +84,9 @@
         android:textColor="#000000"
         android:textColorHint="#B0B0B0"
         android:textSize="16sp"
+        android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvKata" />
@@ -76,6 +105,4 @@
         app:layout_constraintEnd_toEndOf="@id/etKeluhan"
         app:layout_constraintStart_toStartOf="@id/etKeluhan"
         app:layout_constraintTop_toBottomOf="@+id/etKeluhan" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,8 +18,17 @@ class ChatAdapter(private val chatList: List<DataChat>) : RecyclerView.Adapter<C
 
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
         val chat = chatList[position]
+
+        // Membatasi panjang pesan dan menambah titik-titik jika perlu
+        val maxLength = 35 // Panjang maksimal pesan yang ditampilkan
+        val truncatedMessage = if (chat.pesan.length > maxLength) {
+            chat.pesan.substring(0, maxLength) + "..."
+        } else {
+            chat.pesan
+        }
+
         holder.binding.username.text = chat.username
-        holder.binding.pesan.text = chat.pesan
+        holder.binding.pesan.text = truncatedMessage
 
         holder.itemView.setOnClickListener {
             onItemClick?.invoke(chat)  // Memanggil listener ketika item diklik

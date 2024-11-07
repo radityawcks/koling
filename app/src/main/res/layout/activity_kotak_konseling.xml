@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".kotakKonseling">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKonseling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/kotak1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+    <TextView
+        android:id="@+id/tvKata"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/kata"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <EditText
+        android:id="@+id/etKeluhan"
+        android:layout_width="0dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_rectangle1"
+        android:gravity="top|start"
+        android:hint="@string/isiKeluhan"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0B0B0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKata" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnKirim"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/btn1"
+        android:text="@string/kirim"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@id/etKeluhan"
+        app:layout_constraintStart_toStartOf="@id/etKeluhan"
+        app:layout_constraintTop_toBottomOf="@+id/etKeluhan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

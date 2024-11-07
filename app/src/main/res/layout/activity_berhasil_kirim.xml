@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".berhasilKirim">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/rounded_rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/berhasil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBerhasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/berhasil"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/logo"
+            app:layout_constraintStart_toStartOf="@+id/logo"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/tvKata"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/kataBerhasil"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/tvBerhasil"
+            app:layout_constraintStart_toStartOf="@+id/tvBerhasil"
+            app:layout_constraintTop_toBottomOf="@+id/tvBerhasil" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKembali"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/endColor"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tvKata"
+            app:layout_constraintStart_toStartOf="@id/tvKata"
+            app:layout_constraintTop_toBottomOf="@id/tvKata" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

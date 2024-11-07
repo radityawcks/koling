@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "68064299736",
+    "firebase_url": "https://koling1-e261d-default-rtdb.firebaseio.com",
+    "project_id": "koling1-e261d",
+    "storage_bucket": "koling-e42fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897595201030:android:811626a7ad34358facd587",
+        "android_client_info": {
+          "package_name": "com.example.koling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmGxuDiBBv_Bfe_Qwy5vq30W4KHhKxgO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

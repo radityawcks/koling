@@ -1,0 +1,10 @@
+<!-- res/drawable/rounded_rectangle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna background -->
+    <solid android:color="@color/white" />
+
+    <!-- Radius sudut -->
+    <corners android:radius="10dp" /> <!-- Ubah nilai 16dp sesuai kebutuhan -->
+
+    <!-- Border (opsional) -->
+</shape>

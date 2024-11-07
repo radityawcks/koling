@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">KoLing</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="blmPnyaAkun">Belum punya akun?</string>
+    <string name="sdhPnyaAkun">Sudah punya akun?</string>
+    <string name="ko">Ko</string>
+    <string name="ling">Ling</string>
+    <string name="kotak1">Kotak Konseling</string>
+    <string name="kotak2">Konseling</string>
+    <string name="curhat1">Ayo Curhat dengan Kita</string>
+    <string name="curhat2">Ayo curhat dengan BK, pastinya kita akan merahasiakan privasi anda</string>
+    <string name="pilihBk">Pilihlah guru BK yang ingin kamu ajak menjadi partner curthatmu!</string>
+    <string name="kotakKonseling">Isi keluhan kalian tentang sekolah di Kotak Konseling Yukk</string>
+    <string name="cerita">Ceritakan Keluhanmu</string>
+    <string name="message">Direct Message</string>
+    <string name="kata">Ceritakan apa yang ingin kamu sampaikan tentang sekolah!</string>
+    <string name="keluhan">Keluhan Siswa Hari ini:</string>
+    <string name="isiKeluhan">Isi keluhan kalian tentang sekolah di kotak ini!</string>
+    <string name="curhatKirim">Curhat Sekarang</string>
+    <string name="kirim">Kirim</string>
+    <string name="berhasil">Data Berhasil Dikirim</string>
+    <string name="kataBerhasil">Guru BK akan segera memproses keluhan yang telah kamu kiirim</string>
+    <string name="back">Kembali</string>
+    <string name="pakGigs">Sugiarto, S. Psti</string>
+    <string name="mamAyunda">Ayunda Setia Rini, S. Pd</string>
+    <string name="mamAndhini">Andhini Ramadhanty, S.Psi</string>
+    <string name="mamAyudhia">Ayudhia Dewi Urbani, S.Psi, M.Pd.</string>
+    <string name="mamMeli">Meli Artika, S.Pd.</string>
+    <string name="akun">Akun</string>
+    <string name="logout">Logout</string>
+    <string name="isikeluhan">Isi Keluhan:</string>
+    <string name="konfirm">Terima Keluhan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

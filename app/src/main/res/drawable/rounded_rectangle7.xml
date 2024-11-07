@@ -1,0 +1,9 @@
+<!-- res/drawable/rounded_rectangle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna background -->
+    <solid android:color="@color/white" />
+
+    <!-- Radius sudut untuk membuat setengah lingkaran -->
+    <corners
+        android:radius="50dp"/>
+</shape>

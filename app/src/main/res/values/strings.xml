@@ -33,7 +33,7 @@
     <string name="akun">Akun</string>
     <string name="logout">Logout</string>
     <string name="isikeluhan">Isi Keluhan:</string>
-    <string name="konfirm">Terima Keluha</string>
+    <string name="konfirm">Terima Keluhan</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

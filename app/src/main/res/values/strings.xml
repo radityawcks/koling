@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KoLing</string>
+    <string name="app_name">KoLing </string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
@@ -33,7 +33,7 @@
     <string name="akun">Akun</string>
     <string name="logout">Logout</string>
     <string name="isikeluhan">Isi Keluhan:</string>
-    <string name="konfirm">Terima Keluhan</string>
+    <string name="konfirm">Terima Keluha</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

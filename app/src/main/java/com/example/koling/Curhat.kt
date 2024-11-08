@@ -55,14 +55,16 @@ class Curhat : AppCompatActivity() {
                     val admin = dataSnapshot.getValue(Admin::class.java)
                     if (admin != null) {
                         adminList.add(admin)
+                        val position = adminList.size - 1  // Posisi item baru
+                        curhatAdapter.notifyItemInserted(position)  // Memberi tahu adapter item baru ditambahkan
                     }
                 }
-                curhatAdapter.notifyDataSetChanged()
             }
 
             override fun onCancelled(error: DatabaseError) {
-                // Tangani error
+                android.util.Log.e("FirebaseError", "Error: ${error.message}")
             }
         })
     }
+
 }

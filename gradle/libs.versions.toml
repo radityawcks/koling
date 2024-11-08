@@ -28,7 +28,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebase-firestore" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }  # Menambahkan Glide
-
+firebase-auth = "com.google.firebase:firebase-auth:21.0.5"
 
 
 [plugins]
